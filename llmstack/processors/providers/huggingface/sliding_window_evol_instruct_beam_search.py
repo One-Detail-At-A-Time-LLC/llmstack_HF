@@ -4,15 +4,6 @@ class SlidingWindowEvolInstructBeamSearch(evol_instruct.BeamSearch):
         self.window_size = window_size
 
     def search(self, tokens):
-        """Generates code using the beam search algorithm.
-
-        Args:
-            tokens: The input sequence to generate code from.
-
-        Returns:
-            The generated code, or None if an error occurred.
-        """
-
         # Initialize the beam.
         beam = [(tokens, 0)]
 
